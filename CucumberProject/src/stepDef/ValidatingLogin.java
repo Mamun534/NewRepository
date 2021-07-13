@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -29,6 +29,11 @@ public class ValidatingLogin {
 		Thread.sleep(1000);
 	}
 
+	@After
+	public void EndTest() {
+		
+		driver.close();
+	}
 	@When("^user enter right username$")
 	public void user_enter_right_username() throws Throwable {
 
