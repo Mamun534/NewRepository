@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="tests">
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="TestScripts.SauceDemoScripts">
+        <methods>
+          <include name="ContinueShoping"/>
+          <include name="LoginData"/>
+          <include name="UserInformation"/>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Shopping"/>
+          <include name="TotalPrice"/>
+        </methods>
+      </class> <!-- TestScripts.SauceDemoScripts -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test name="EdgeTest(failed)" parallel="tests">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="TestScripts.SauceDemoScripts">
+        <methods>
+          <include name="ContinueShoping"/>
+          <include name="LoginData"/>
+          <include name="UserInformation"/>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Shopping"/>
+          <include name="TotalPrice"/>
+        </methods>
+      </class> <!-- TestScripts.SauceDemoScripts -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestScripts.SauceDemoScripts">
+        <methods>
+          <include name="ContinueShoping"/>
+          <include name="LoginData"/>
+          <include name="UserInformation"/>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Shopping"/>
+          <include name="TotalPrice"/>
+        </methods>
+      </class> <!-- TestScripts.SauceDemoScripts -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test name="FirefoxTest2(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="TestScripts.SauceDemoScripts">
+        <methods>
+          <include name="ContinueShoping"/>
+          <include name="LoginData"/>
+          <include name="UserInformation"/>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Shopping"/>
+          <include name="TotalPrice"/>
+        </methods>
+      </class> <!-- TestScripts.SauceDemoScripts -->
+    </classes>
+  </test> <!-- FirefoxTest2(failed) -->
+  <test name="ChromeTest2(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestScripts.SauceDemoScripts">
+        <methods>
+          <include name="ContinueShoping"/>
+          <include name="LoginData"/>
+          <include name="UserInformation"/>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Shopping"/>
+          <include name="TotalPrice"/>
+        </methods>
+      </class> <!-- TestScripts.SauceDemoScripts -->
+    </classes>
+  </test> <!-- ChromeTest2(failed) -->
+  <test name="EdgeTest2(failed)" parallel="tests">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="TestScripts.SauceDemoScripts">
+        <methods>
+          <include name="ContinueShoping"/>
+          <include name="LoginData"/>
+          <include name="UserInformation"/>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+          <include name="Shopping"/>
+          <include name="TotalPrice"/>
+        </methods>
+      </class> <!-- TestScripts.SauceDemoScripts -->
+    </classes>
+  </test> <!-- EdgeTest2(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
