@@ -12,42 +12,46 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import SauceDemo_POM.SauceDemo;
+
 public class SauceDemoScripts {
 
 	WebDriver driver;
 	SauceDemo_POM.SauceDemo sd;
-
+	
 	@BeforeTest
 	@Parameters("browser")
-
+	
 	public void Setup(String browser) throws Exception {
-
-		if (browser.equalsIgnoreCase("Firefox")) {
-			
-			  System.setProperty("Webdriver.gecko.driver",
-			  "C:\\Users\\Owner\\OneDrive\\Desktop\\program\\geckodriver.exe");
-			  driver = new FirefoxDriver();
-		}
-		else if (browser.equalsIgnoreCase("chrome")) {
-
+		
+			if (browser.equalsIgnoreCase("chrome")) 
+			{
 			System.setProperty("webdriver.chrome.driver",
 			"C:\\Users\\Owner\\OneDrive\\Desktop\\program\\chromedriver.exe");
 			driver = new ChromeDriver();
-		}
+			}
 
-		else if (browser.equalsIgnoreCase("Edge")) {
+		else if (browser.equalsIgnoreCase("Edge")) 
+			{
 			System.setProperty("webdriver.edge.driver",
 			"C:\\Users\\Owner\\OneDrive\\Desktop\\program\\msedgedriver.exe");
 			driver = new EdgeDriver();
-		}
-		else {
-			throw new Exception("Browser is not correct");
-		}
+			}
+		
+		else if (browser.equalsIgnoreCase("Firefox")) 
+			{	
+			  System.setProperty("Webdriver.gecko.driver",
+			  "C:\\Users\\Owner\\OneDrive\\Desktop\\program\\geckodriver.exe");
+			  driver = new FirefoxDriver();
+			}
+	
 		sd = new SauceDemo(driver);
 		driver.get("https://www.saucedemo.com/");
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	}
+	} 
+		
 
 	/*
 	 * @BeforeTest
@@ -70,9 +74,10 @@ public class SauceDemoScripts {
 	 * 
 	 * Multiple_Test_Pages.Utility.CaptureScreenshot(driver, "SauceDemo"); }
 	 */
-
+	
+	
 	@AfterTest
-
+	
 	public void endTest() {
 		driver.close();
 	}
@@ -246,4 +251,4 @@ public class SauceDemoScripts {
 		sd.BackToHome().click();
 	}
 
-}
+	}

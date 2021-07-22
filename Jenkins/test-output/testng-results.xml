@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8271" started-at="2021-07-14T02:23:26 EDT" finished-at="2021-07-14T02:23:34 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="8271" started-at="2021-07-14T02:23:26 EDT" finished-at="2021-07-14T02:23:34 EDT">
+      <class name="SauceDemo_Scripts.ScrollPage">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:SauceDemo_Scripts.ScrollPage@4206a205]" name="setupTest" is-config="true" duration-ms="3636" started-at="2021-07-14T02:23:26 EDT" finished-at="2021-07-14T02:23:29 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="LoginData()[pri:1, instance:SauceDemo_Scripts.ScrollPage@4206a205]" name="LoginData" duration-ms="4570" started-at="2021-07-14T02:23:29 EDT" finished-at="2021-07-14T02:23:34 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginData -->
+        <test-method status="FAIL" signature="ScrollDown()[pri:2, instance:SauceDemo_Scripts.ScrollPage@4206a205]" name="ScrollDown" duration-ms="9" started-at="2021-07-14T02:23:34 EDT" finished-at="2021-07-14T02:23:34 EDT">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[org.openqa.selenium.chrome.ChromeDriver cannot be cast to com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: org.openqa.selenium.chrome.ChromeDriver cannot be cast to com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor
+at SauceDemo_Scripts.ScrollPage.ScrollDown(ScrollPage.java:68)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScrollDown -->
+      </class> <!-- SauceDemo_Scripts.ScrollPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
