@@ -11,16 +11,13 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class ValidatingLogin {
-	
-	
+
 	WebDriver driver;
 
 	@Given("^user in the login page$")
 	public void user_in_the_login_page() throws Throwable {
 
-		
-		System.setProperty("webdriver.chrome.driver",		
-				"C:\\Users\\Owner\\OneDrive\\Desktop\\program\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Owner\\OneDrive\\Desktop\\program\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.saucedemo.com/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -31,13 +28,13 @@ public class ValidatingLogin {
 
 	@After
 	public void EndTest() {
-		
+
 		driver.close();
 	}
+
 	@When("^user enter right username$")
 	public void user_enter_right_username() throws Throwable {
 
-	
 		driver.findElement(By.id("user-name")).sendKeys("standard_user");
 	}
 
